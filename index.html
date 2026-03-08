@@ -6,32 +6,59 @@
 <title>Góc Nhỏ Jena</title>
 
 <style>
+
 body{
-font-family: Arial;
-max-width:800px;
-margin:auto;
-background-attachment:fixed;
-padding:40px;
-line-height:1.8;
-user-select:none;
+margin:0;
+height:100vh;
 
-background:
-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-url("background.jpg");
+font-family: Arial, sans-serif;
 
+background:url("background.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-background-attachment:fixed;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* khung kính */
+
+.glass{
+
+width:700px;
+max-width:90%;
+
+padding:50px;
+
+background:rgba(255,255,255,0.15);
+
+border-radius:20px;
+
+backdrop-filter:blur(15px);
+-webkit-backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,0.3);
+
+box-shadow:0 8px 32px rgba(0,0,0,0.35);
+
+color:white;
+
+text-align:center;
+
 }
 
 h1{
-color:#222;
+font-size:42px;
+margin-bottom:10px;
 }
 
 p{
 font-size:18px;
+opacity:0.9;
 }
+
 </style>
 
 <script>
@@ -49,25 +76,10 @@ e.preventDefault();
 // chặn phím tắt
 document.onkeydown = function(e){
 
-// Ctrl+C
-if(e.ctrlKey && e.key === "c"){
-return false;
-}
-
-// Ctrl+U
-if(e.ctrlKey && e.key === "u"){
-return false;
-}
-
-// Ctrl+S
-if(e.ctrlKey && e.key === "s"){
-return false;
-}
-
-// Ctrl+A
-if(e.ctrlKey && e.key === "a"){
-return false;
-}
+if(e.ctrlKey && e.key === "c"){return false;}
+if(e.ctrlKey && e.key === "u"){return false;}
+if(e.ctrlKey && e.key === "s"){return false;}
+if(e.ctrlKey && e.key === "a"){return false;}
 
 };
 
@@ -77,11 +89,15 @@ return false;
 
 <body>
 
+<div class="glass">
+
 <h1>Góc nhỏ Jena</h1>
 
 <p>
 Ghi chép, tiểu luận và suy tư về triết học.
 </p>
+
+</div>
 
 </body>
 </html>
