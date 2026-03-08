@@ -7,42 +7,42 @@
 
 <style>
 
-/* reset */
+/* nền trang */
 
 body{
 margin:0;
 font-family:system-ui;
 color:white;
-
-/* background */
-
 background:url("background.jpg") center/cover no-repeat fixed;
 }
 
 /* header */
 
 .header{
-position:fixed;
-top:20px;
-left:30px;
-z-index:10;
+margin:70px 0 40px 80px;
 }
 
 .header h1{
 margin:0;
-font-size:28px;
+font-size:36px;
 font-weight:600;
 }
 
-/* vùng nội dung */
+.header p{
+margin-top:10px;
+font-size:18px;
+opacity:0.9;
+}
+
+/* vùng bài viết */
 
 .content{
 max-width:800px;
-margin:120px auto;
+margin:auto;
 padding:20px;
 }
 
-/* glass card */
+/* khung kính */
 
 .glass-card{
 
@@ -76,7 +76,7 @@ line-height:1.6;
 opacity:0.9;
 }
 
-/* hiệu ứng hover */
+/* hover */
 
 .glass-card:hover{
 transform:translateY(-5px);
@@ -114,7 +114,13 @@ if(e.ctrlKey && e.key === "a"){return false;}
 <body>
 
 <header class="header">
+
 <h1>Góc nhỏ Jena</h1>
+
+<p>
+Ghi chép, tiểu luận và suy tư về triết học.
+</p>
+
 </header>
 
 <main class="content">
@@ -124,11 +130,7 @@ if(e.ctrlKey && e.key === "a"){return false;}
 <h2>Bài viết đầu tiên</h2>
 
 <p>
-Ghi chép, tiểu luận và suy tư về triết học.
-</p>
-
-<p>
-Bạn có thể thay nội dung này bằng bài viết thật của mình.
+Đây là nơi bạn có thể đặt nội dung bài viết.
 </p>
 
 </article>
